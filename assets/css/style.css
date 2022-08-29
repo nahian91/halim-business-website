@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+}
+
+
+.top-bar-area {
+    background-color: #635cdb;
+    padding: 10px 0;
+  }
+  .top-bar-info a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .top-bar-social a {
+    color: #fff;
+    margin-left: 10px;
+  }
+
+.navbar-brand {
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: 700;
+}
+.halim-menu li a {
+    color: #333;
+  }
+  .navbar-nav.halim-menu li a {
+    color: #333;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 5px;
+    transition: .3s;
+    padding: 20px 0;
+  }
+  .navbar-nav.halim-menu li a:hover {
+    color: #635cdb;
+  }
+  
+  .navbar-nav.halim-menu li {
+    position: relative;
+  }
+  .navbar-nav.halim-menu li ul {
+    position: absolute;
+    width: 200px;
+    list-style: none;
+    padding: 5px 0;
+    background-color: #fff;
+    border: 1px solid #f4f4f4;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,0.1);
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: 0 0 0;
+    z-index: 9;
+  }
+  .navbar-nav.halim-menu li ul li {
+    border-bottom: 1px dashed #ddd;
+    margin-bottom: 7px;
+    padding-bottom: 8px;
+  }
+  .navbar-nav.halim-menu li ul li a {
+    text-decoration: navajowhite;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 10px;
+    display: block;
+  }
+  .navbar-nav.halim-menu li ul li:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .navbar-nav.halim-menu li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+  }
+  
+.navbar-nav.halim-menu li.caret {
+    position: relative;
+  }
+  .navbar-nav.halim-menu li.caret:after {
+    position: absolute;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    top: 20px;
+    right: 0px;
+    font-size: 10px;
+  }
+  .navbar.navbar-expand-lg {
+	padding: 0;
+}
+
+  
+.single-slide {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  }
+  .single-slide:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: .8;
+    z-index: -1;
+    left: 0;
+    top: 0;
+  }
+  
+.slide-content h4 {
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+  }
+  .slide-content h4:before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background-color: #635cdb;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .slide-content h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+  }
+  .box-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #635cdb;
+    font-weight: 600;
+    padding: 10px 30px;
+    transition: .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+  }
+  .box-btn:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #494679;
+    left: -100%;
+    top: 0;
+    transition: .3s;
+    z-index: -1;
+  }
+  .box-btn:hover::before {
+    left: 0;
+  }
+  .box-btn:hover {
+    color: #fff;
+  }
+
+  
+.slider-area .owl-dots button {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    display: block;
+    margin: 15px 0;
+  }
+  .slider-area .owl-dots {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .slider-area .owl-dots button.active {
+    background-color: #635cdb;
+  }
